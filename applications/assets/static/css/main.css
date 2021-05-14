@@ -1,0 +1,17 @@
+#content {
+    height: 220px;
+}
+
+#name, #email, #phone, #content {
+    border: 1px solid #19BC9B;
+}
+
+#name, #email, #phone {
+    height: 50px;
+}
+
+#submit {
+    height: 50px;
+    padding: 8px 25px;
+    font-weight: bold;
+}

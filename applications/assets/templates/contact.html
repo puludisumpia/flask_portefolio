@@ -1,0 +1,24 @@
+<section id="contact">
+    <div class="container">
+        <h2 class="text-uppercase text-center text-secondary mb-0">Me Contacter</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                {% include "alertes.html" %}
+                <form id="contactForm" name="sentMessage" novalidate="novalidate" method="post">
+                    {{ render_field(form.name) }}
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            {{ render_field(form.email) }}
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            {{ render_field(form.phone) }}
+                        </div>
+                    </div>
+                    {{ render_field(form.content) }}
+                    {{ render_field(form.submit) }}
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
